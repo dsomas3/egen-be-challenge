@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="application/JSON; charset=utf-8" />
+ <title>User List</title>
+</head>
+<body>
+ <h3>User List</h3>
+ <#list users as user>
+ <table>
+ <tr>
+  <td>User ID </td> <td> ${user["_id"]}</td>
+  </tr>
+  <tr>
+    <td>User First Name</td> <td> ${user["firstName"]}</td>
+  </tr>
+  <tr>
+    <td>User Last Name  </td> <td>${user["lastName"]}</td>
+  </tr>
+  <tr>
+    <td>User Email      </td> <td>${user["email"]}</td>
+  </tr>
+  <tr>
+    <td>Street Address  </td> <td>${user["street"]}</td>
+  </tr>
+  <tr>
+   <td>City            </td> <td>${user["city"]}</td>
+  </tr>
+  <tr>
+   <td>ZipCode         </td> <td>${user["zip"]}</td>
+  </tr>
+  <tr>
+   <td>State           </td> <td>${user["state"]}</td>
+  </tr>
+  <tr>
+   <td>Country         </td> <td>${user["country"]}</td>
+  </tr>
+  <tr>
+   <td>Company Name    </td> <td>${user["companyName"]}</td>
+  </tr>
+  <tr>
+   <td>Company Website </td> <td>${user["companyWebsite"]}</td>
+  </tr>
+  <tr>
+   <td>User Profile Picture Link  </td> <td>${user["profilePic"]}</td>
+  </tr>
+  <hr>
+ </table>
+ </#list>
+</body>
+</html>
